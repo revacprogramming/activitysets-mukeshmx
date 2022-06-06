@@ -1,18 +1,17 @@
 
-def add(a, b):
-    pass  # ...
-
-
-def output(a, b, sum):
-    pass  # ...
-
-
 def main():
-    a, b = input_two_numbers()
-    sum = add(a, b)
+    a, b = input().split()
+    a = int(a)
+    b = int(b)
+    c = add(a,b)
+    output(a, b, c)
 
-    output(a, b, sum)
+
+def add(a, b):
+    c = a+b
+    return c
 
 
-if __name__ == '__main__':
-    main()
+def output(a, b, c):
+    print("ans %d and %d is %d" %  (a, b, c))
+main()
